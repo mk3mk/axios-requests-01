@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const baseURL = "https://replit.com/@mk3mkmk3mk/django-335/posts";
+const baseURL = "http://127.0.0.1:8000/posts";
+
+// const baseURL = "https://api.designartproject.ru/posts";
+
+// const baseURL = "https://jsonplaceholder.typicode.com/posts";
 
 const EditPostList = () => {
     const [posts, setPosts] = useState([]);
@@ -42,7 +46,8 @@ const EditPostList = () => {
 
     return (
         <div>
-            <h2>List of First 5 Posts:</h2>
+            <h2>6666 List of First 5 Posts:</h2>
+            <p>{baseURL}</p>
             <ul>
                 {posts.map(post => (
                     <li key={post.id}>

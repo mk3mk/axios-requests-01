@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const baseURL = "https://jsonplaceholder.typicode.com/posts";
+// const baseURL = "http://127.0.0.1:8000/posts/";
+
+const baseURL = "https://api.designartproject.ru/posts/";
+
+// const baseURL = "https://jsonplaceholder.typicode.com/posts/";
 
 const PostListWithCRUD = () => {
     const [posts, setPosts] = useState([]);
@@ -70,8 +74,11 @@ const PostListWithCRUD = () => {
     };
 
     return (
-        <div>
-            <h2>List of First 5 Posts:</h2>
+        
+        <div className="2222">
+            <p>get, post, put, delete</p>
+            <h2>2222 List of First 5 Posts:</h2>
+            <p>{baseURL}</p>
             <ul>
                 {posts.map(post => (
                     <li key={post.id}>

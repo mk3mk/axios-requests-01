@@ -30,28 +30,28 @@ export default function App() {
       <Container>
         
         <Row>
-        <Col className="class1">
+        <Col className="class1 col1111">
               <AxiosUserst33501/>     
           </Col>
-          <Col className="class1">
+          <Col className="class1 col2222">
               <AxiosPostRequest/>     
           </Col>
         </Row>
 
         <Row>
-        <Col className="class1">
+        <Col className="class1 col3333">
               <AxiosPutRequest/>  
           </Col>
-          <Col className="class1">
+          <Col className="class1 col4444">
               <AxiosDeleteRequest/>
           </Col>
         </Row>
 
         <Row>
-        <Col className="class1">
+        <Col className="class1 col5555">
               <AxiosPostRequestForm/>  
           </Col>
-          <Col className="class1">
+          <Col className="class1 col6666">
               <AxiosPostRequest335/>     
           </Col>
         </Row>

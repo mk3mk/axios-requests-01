@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
-const baseURL = "https://15881f04-5f40-468c-b98b-3c55da41fb6d-00-ptj9szw56yn3.picard.replit.dev/users/";
+// const baseURL = "http://127.0.0.1:8000/users/";
+
+const baseURL = "https://api.designartproject.ru/users/";
+
+// const baseURL = "https://jsonplaceholder.typicode.com/users/";
 
 const EditUserList = () => {
     const [users, setUsers] = useState([]);
@@ -58,8 +62,10 @@ const EditUserList = () => {
       };
 
     return (
-        <div>
-            <h2>List of First 5 Users:</h2>
+        <div className="1111">
+            <p>get, put, post</p>
+            <h2>1111 List of First 5 Users:</h2>
+            <p>{baseURL}</p>
             <ul>
                 {users.map(user => (
                     <li key={user.id}>
